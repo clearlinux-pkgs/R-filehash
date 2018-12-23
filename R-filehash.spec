@@ -4,7 +4,7 @@
 #
 Name     : R-filehash
 Version  : 2.4.1
-Release  : 3
+Release  : 4
 URL      : https://cran.r-project.org/src/contrib/filehash_2.4-1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/filehash_2.4-1.tar.gz
 Summary  : Simple Key-Value Database
