@@ -4,7 +4,7 @@
 #
 Name     : R-filehash
 Version  : 2.4.5
-Release  : 39
+Release  : 40
 URL      : https://cran.r-project.org/src/contrib/filehash_2.4-5.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/filehash_2.4-5.tar.gz
 Summary  : Simple Key-Value Database
@@ -15,9 +15,6 @@ Requires: R-filehash-license = %{version}-%{release}
 Requires: R-digest
 BuildRequires : R-digest
 BuildRequires : buildreq-R
-# Suppress stripping binaries
-%define __strip /bin/true
-%define debug_package %{nil}
 
 %description
 are associated with data values that are stored on the disk. A simple interface is provided for inserting,
@@ -53,10 +50,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1676048308
+export SOURCE_DATE_EPOCH=1678818965
 
 %install
-export SOURCE_DATE_EPOCH=1676048308
+export SOURCE_DATE_EPOCH=1678818965
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/R-filehash
 cp %{_builddir}/filehash/inst/COPYING %{buildroot}/usr/share/package-licenses/R-filehash/05cde7f3cd671233778c15c96fc8c47d06216577 || :
